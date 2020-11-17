@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GsbApp</string>
+    <string name="nom_complet">Nom complet</string>
+    <string name="pass">Mot de passe</string>
+    <string name="pseudo">Pseudo</string>
+    <string name="successco">CONNEXION REUSSIE</string>
+</resources>
