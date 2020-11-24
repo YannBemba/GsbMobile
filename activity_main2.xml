@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/idConsulter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bConsulter"
+            android:text="Consulter un compte-rendu"
+            android:background="#000000"
+            android:textColor="#FFFFFF"/>
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/idSaisir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bSaisir"
+            android:text="Saisir un compte-rendu"
+            android:background="#000000"
+            android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
