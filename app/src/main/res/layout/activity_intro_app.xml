@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_intro"
+    android:background="@color/dark_theme"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".Vue.IntroApp" >
+    tools:context=".Controlleurs.IntroAppActivity" >
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie_layer_name"
@@ -16,6 +16,6 @@
         app:lottie_autoPlay="true"
         android:layout_gravity="center"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/robot"/>
+        app:lottie_rawRes="@raw/intellij"/>
 
 </LinearLayout>

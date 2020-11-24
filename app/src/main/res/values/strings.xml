@@ -4,4 +4,10 @@
     <string name="pass">Mot de passe</string>
     <string name="pseudo">Pseudo</string>
     <string name="successco">CONNEXION REUSSIE</string>
+    <string name="creerCompteRendu">nouveau compte rendu</string>
+    <string name="creer">Créer</string>
+    <string name="suivant">Suivant</string>
+    <string name="annuler">Annuler</string>
+    <string name="valider">Valider</string>
+
 </resources>

@@ -1,4 +1,4 @@
-package com.example.gsbapp.Vue;
+package com.example.gsbapp.Controlleurs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,9 +9,9 @@ import android.os.Handler;
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.gsbapp.R;
 
-public class IntroApp extends AppCompatActivity {
+public class IntroAppActivity extends AppCompatActivity {
 
-    private static int TIME = 4000;
+    private static int TIME = 5000;
 
     LottieAnimationView mLottieAnimationView;
 

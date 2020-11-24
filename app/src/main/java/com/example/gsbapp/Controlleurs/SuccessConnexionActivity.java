@@ -1,4 +1,4 @@
-package com.example.gsbapp.Vue;
+package com.example.gsbapp.Controlleurs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.gsbapp.R;
 
-public class SuccessConnexion extends AppCompatActivity {
+public class SuccessConnexionActivity extends AppCompatActivity {
 
     private static int TIME = 3000;
     LottieAnimationView mLottieAnimationView;
@@ -27,7 +27,7 @@ public class SuccessConnexion extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(getApplicationContext(), CompteRenduActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CompteRenduSaisieActivity.class);
                 startActivity(intent);
                 finish();
             }
