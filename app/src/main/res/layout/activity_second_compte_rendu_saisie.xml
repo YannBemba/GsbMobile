@@ -97,21 +97,25 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/btnConfirmation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:backgroundTint="@color/dark_theme"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="confirmationSaisie"
             android:text="@string/creer"
             android:textColor="@color/white"
-            android:onClick="confirmationSaisie"
-            android:textSize="18sp"
-            android:backgroundTint="@color/dark_theme"/>
+            android:textSize="18sp" />
 
         <Button
+            android:id="@+id/annulerConfirmation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/annuler"
             android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
             android:textColor="@color/dark_theme"
             android:onClick="annulerSaisie"
             android:backgroundTint="@color/grey_white"/>

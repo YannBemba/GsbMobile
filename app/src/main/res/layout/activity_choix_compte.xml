@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Controlleurs.ChoixCompteActivity">
+
+    <Button
+        android:id="@+id/idConsulter"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Consulter un compte-rendu"
+        android:textSize="20sp"
+        android:onClick="choixSaisie"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"/>
+
+
+    <Button
+        android:id="@+id/idSaisir"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Saisir un compte-rendu"
+        android:textSize="20sp"
+        android:onClick="choixSaisie"
+        android:backgroundTint="#000000"
+        android:textColor="#ffffff"/>
+
+
+
+</LinearLayout>

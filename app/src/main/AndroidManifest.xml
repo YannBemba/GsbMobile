@@ -9,20 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GsbApp">
-        <activity android:name=".Controlleurs.ListCompteRenduActivity"></activity>
-        <activity android:name=".Controlleurs.ThirdCompteRenduSaisieActivity" />
+        <activity android:name=".Controlleurs.Formulaires.ListeCompteRenduActivity" />
+        <activity android:name=".Controlleurs.Formulaires.ConsulterCompteRenduActivity" />
+        <activity android:name=".Controlleurs.ChoixCompteActivity" />
+        <activity android:name=".Controlleurs.Animations.OutroActivity" />
         <activity android:name=".Controlleurs.SecondCompteRenduSaisieActivity" />
-        <activity android:name=".Controlleurs.CompteRenduSaisieActivity" />
-        <activity android:name=".Controlleurs.SuccessConnexionActivity" />
-        <activity android:name=".Vues.CompteRenduActivity" />
-        <activity android:name=".Controlleurs.IntroAppActivity">
+        <activity android:name=".Controlleurs.Formulaires.CompteRenduSaisieActivity" />
+        <activity android:name=".Controlleurs.Animations.SuccessConnexionActivity" />
+        <activity android:name=".Controlleurs.Animations.IntroAppActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Controlleurs.AuthentificationActivity" />
+        <activity android:name=".Controlleurs.Formulaires.AuthentificationActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

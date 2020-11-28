@@ -1,4 +1,4 @@
-package com.example.gsbapp.Controlleurs;
+package com.example.gsbapp.Controlleurs.Formulaires;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.gsbapp.Controlleurs.ChoixCompteActivity;
+import com.example.gsbapp.Controlleurs.SecondCompteRenduSaisieActivity;
 import com.example.gsbapp.R;
 
 public class CompteRenduSaisieActivity extends AppCompatActivity {
@@ -34,15 +36,12 @@ public class CompteRenduSaisieActivity extends AppCompatActivity {
     }
 
     public void prochaineSaisieCompteRendu(View view) {
-        Intent intent = new Intent(getApplicationContext(), SecondCompteRenduSaisieActivity.class);
-
-        startActivity(intent);
+        startActivity(new Intent(getApplicationContext(), SecondCompteRenduSaisieActivity.class));
     }
 
 
     public void annulerSaisie(View view) {
-        //Intent intent = new Intent(getApplicationContext(), SecondCompteRenduSaisieActivity.class);
         Toast.makeText(getApplicationContext(), "Le compte rendu n'a pas été enregistré", Toast.LENGTH_LONG).show();
-        //startActivity(intent);
+        startActivity(new Intent(getApplicationContext(), ChoixCompteActivity.class));
     }
 }

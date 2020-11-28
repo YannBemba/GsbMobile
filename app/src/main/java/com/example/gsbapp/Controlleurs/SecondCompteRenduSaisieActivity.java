@@ -6,14 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.gsbapp.Controlleurs.Animations.OutroActivity;
 import com.example.gsbapp.R;
 
 public class SecondCompteRenduSaisieActivity extends AppCompatActivity {
 
-    Spinner spinListMotifs, spinListCoeffConfiance;
+    private Spinner spinListMotifs, spinListCoeffConfiance;
+    Button btnConfirmation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,7 @@ public class SecondCompteRenduSaisieActivity extends AppCompatActivity {
 
         spinListMotifs = (Spinner) findViewById(R.id.spinListPraticiens);
         spinListCoeffConfiance = (Spinner) findViewById(R.id.spinListCoeffConfiance);
+        btnConfirmation = (Button) findViewById(R.id.btnConfirmation) ;
 
         String[] listeMotifs = new String[]{"Très bien", "", ""};
         String[] listeConfiances = new String[]{"Praticien convaincu", "Hésitant", "Non convaincu"};
@@ -39,19 +43,23 @@ public class SecondCompteRenduSaisieActivity extends AppCompatActivity {
 
     }
 
-
-    public void prochaineSaisieCompteRendu2(View view) {
-        Intent intent = new Intent(this, ThirdCompteRenduSaisieActivity.class);
-        startActivity(intent);
-    }
-
     public void annulerSaisie(View view) {
-        //Intent intent = new Intent(getApplicationContext(), SecondCompteRenduSaisieActivity.class);
-        Toast.makeText(getApplicationContext(), "Le compte rendu n'a pas été enregistré", Toast.LENGTH_LONG).show();
-        //startActivity(intent);
+        Toast.makeText(getApplicationContext(),
+                "Le compte rendu n'a pas été enregistré",
+                Toast.LENGTH_LONG)
+                .show();
+
+        startActivity(new Intent(getApplicationContext(), ChoixCompteActivity.class));
     }
 
     public void confirmationSaisie(View view) {
+        Intent intent = new Intent(getApplicationContext(), OutroActivity.class);
+        Toast.makeText(getApplicationContext(),
+                "Le compte rendu a bien été enregisré",
+                Toast.LENGTH_LONG)
+                .show();
+        startActivity(intent);
+        finish();
 
     }
 }

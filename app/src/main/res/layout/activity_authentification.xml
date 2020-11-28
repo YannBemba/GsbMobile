@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:gravity="center"
-    tools:context=".Controlleurs.AuthentificationActivity"
+    tools:context=".Controlleurs.Formulaires.AuthentificationActivity"
     android:padding="20dp">
 
     <ImageView
@@ -19,10 +19,10 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
         android:text="Bienvenue"
         android:textColor="@color/black"
-        android:textSize="40sp"
-        android:layout_marginTop="-20dp"/>
+        android:textSize="40sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,6 +36,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/pseudo"
             app:startIconDrawable="@drawable/person"
+            app:startIconTint="@color/black"
             app:hintTextColor="@color/black"
             android:textColorHint="@color/black"
             app:passwordToggleTint="@color/black"
@@ -58,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/pass"
+            android:layout_marginTop="20dp"
             app:startIconDrawable="@drawable/vpn"
             android:textColorHint="@color/black"
             app:startIconTint="@color/black"

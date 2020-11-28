@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="30dp"
+    tools:context=".Controlleurs.Formulaires.ConsulterCompteRenduActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulter un compte rendu"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="135px"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="811px"
+            android:layout_height="1dp"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="355px"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="371px"
+            android:layout_height="wrap_content"
+            android:text="Saisir le mois :"
+            android:layout_marginTop="55px"
+            android:layout_marginLeft="185px"
+            android:layout_marginRight="55px"
+            android:layout_marginBottom="31px"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinListMois"
+            android:layout_width="371px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="55px"
+            android:layout_marginTop="55px"
+            android:layout_marginRight="55px"
+            android:layout_marginBottom="85px"
+            android:backgroundTint="#090707"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="371px"
+            android:layout_height="wrap_content"
+            android:text="Saisir l´année"
+            android:layout_marginTop="55px"
+            android:layout_marginLeft="185px"
+            android:layout_marginRight="55px"
+            android:layout_marginBottom="31px"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spinListAnnee"
+            android:layout_width="371px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55px"
+            android:layout_marginLeft="55px"
+            android:layout_marginRight="55px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="85px" />
+
+        <Button
+            android:id="@+id/button_consulter"
+            android:layout_width="375px"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#0E0C0C"
+            android:text="Consulter"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="43px" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,13 +1,13 @@
-package com.example.gsbapp.Controlleurs;
+package com.example.gsbapp.Controlleurs.Formulaires;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.gsbapp.Controlleurs.Animations.SuccessConnexionActivity;
 import com.example.gsbapp.R;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
@@ -38,7 +38,6 @@ public class AuthentificationActivity extends AppCompatActivity {
         System.out.println(nomPseudo);
 
         if(nomPseudo.equals("Yann") && mdp.equals("1234")){
-
             Intent intent = new Intent(this, SuccessConnexionActivity.class);
             startActivity(intent);
 

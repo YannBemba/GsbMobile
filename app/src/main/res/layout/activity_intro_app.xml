@@ -7,10 +7,10 @@
     android:background="@color/dark_theme"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".Controlleurs.IntroAppActivity" >
+    tools:context=".Controlleurs.Animations.IntroAppActivity" >
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottie_layer_name"
+        android:id="@+id/lottie_layer_intro"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:lottie_autoPlay="true"
