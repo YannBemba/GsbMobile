@@ -8,12 +8,12 @@ import android.os.Handler;
 import android.view.WindowManager;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.gsbapp.Controlleurs.ChoixCompteActivity;
+import com.example.gsbapp.Controlleurs.Listes.ChoixCompteActivity;
 import com.example.gsbapp.R;
 
 public class SuccessConnexionActivity extends AppCompatActivity {
 
-    private static int TIME = 3000;
+    private static int TIME = 2000;
 
     LottieAnimationView mLottieAnimationViewSuccess;
 

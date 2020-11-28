@@ -9,8 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.gsbapp.Controlleurs.ChoixCompteActivity;
-import com.example.gsbapp.Controlleurs.SecondCompteRenduSaisieActivity;
+import com.example.gsbapp.Controlleurs.Listes.ChoixCompteActivity;
 import com.example.gsbapp.R;
 
 public class CompteRenduSaisieActivity extends AppCompatActivity {

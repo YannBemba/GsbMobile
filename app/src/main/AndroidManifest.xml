@@ -11,9 +11,9 @@
         android:theme="@style/Theme.GsbApp">
         <activity android:name=".Controlleurs.Formulaires.ListeCompteRenduActivity" />
         <activity android:name=".Controlleurs.Formulaires.ConsulterCompteRenduActivity" />
-        <activity android:name=".Controlleurs.ChoixCompteActivity" />
+        <activity android:name=".Controlleurs.Listes.ChoixCompteActivity" />
         <activity android:name=".Controlleurs.Animations.OutroActivity" />
-        <activity android:name=".Controlleurs.SecondCompteRenduSaisieActivity" />
+        <activity android:name=".Controlleurs.Formulaires.SecondCompteRenduSaisieActivity" />
         <activity android:name=".Controlleurs.Formulaires.CompteRenduSaisieActivity" />
         <activity android:name=".Controlleurs.Animations.SuccessConnexionActivity" />
         <activity android:name=".Controlleurs.Animations.IntroAppActivity">

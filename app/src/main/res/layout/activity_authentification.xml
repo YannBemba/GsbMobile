@@ -19,7 +19,7 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-20dp"
+        android:layout_marginTop="20dp"
         android:text="Bienvenue"
         android:textColor="@color/black"
         android:textSize="40sp" />
@@ -34,6 +34,7 @@
             android:id="@+id/pseudo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:hint="@string/pseudo"
             app:startIconDrawable="@drawable/person"
             app:startIconTint="@color/black"

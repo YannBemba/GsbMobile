@@ -8,7 +8,7 @@ import android.os.Handler;
 import android.view.WindowManager;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.gsbapp.Controlleurs.ChoixCompteActivity;
+import com.example.gsbapp.Controlleurs.Listes.ChoixCompteActivity;
 import com.example.gsbapp.R;
 
 public class OutroActivity extends AppCompatActivity {

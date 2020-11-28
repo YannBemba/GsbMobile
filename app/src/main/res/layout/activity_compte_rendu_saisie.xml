@@ -68,8 +68,8 @@
                 android:calendarTextColor="#FFFFFF"
                 android:calendarViewShown="false"
                 android:datePickerMode="spinner"
-                android:headerBackground="@drawable/bg_intro"
-                android:spinnersShown="true" />
+                android:spinnersShown="true"
+                android:yearListSelectorColor="#000000" />
 
         </LinearLayout>
 

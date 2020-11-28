@@ -1,4 +1,4 @@
-package com.example.gsbapp.Controlleurs;
+package com.example.gsbapp.Controlleurs.Formulaires;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.gsbapp.Controlleurs.Animations.OutroActivity;
+import com.example.gsbapp.Controlleurs.Listes.ChoixCompteActivity;
 import com.example.gsbapp.R;
 
 public class SecondCompteRenduSaisieActivity extends AppCompatActivity {
