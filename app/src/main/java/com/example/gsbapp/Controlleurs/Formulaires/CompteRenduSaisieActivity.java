@@ -1,6 +1,7 @@
 package com.example.gsbapp.Controlleurs.Formulaires;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +12,10 @@ import android.widget.Toast;
 
 import com.example.gsbapp.Controlleurs.Listes.ChoixCompteActivity;
 import com.example.gsbapp.R;
+
+import java.util.ResourceBundle;
+
+import www.sanju.motiontoast.MotionToast;
 
 public class CompteRenduSaisieActivity extends AppCompatActivity {
 
@@ -40,7 +45,22 @@ public class CompteRenduSaisieActivity extends AppCompatActivity {
 
 
     public void annulerSaisie(View view) {
-        Toast.makeText(getApplicationContext(), "Le compte rendu n'a pas été enregistré", Toast.LENGTH_LONG).show();
-        startActivity(new Intent(getApplicationContext(), ChoixCompteActivity.class));
+
+        Intent intent = new Intent(CompteRenduSaisieActivity.this, ChoixCompteActivity.class);
+
+        //Création du Motion Toast
+
+        MotionToast.Companion.darkToast(
+                CompteRenduSaisieActivity.this,
+                "SAISIE ANNULE",
+                "Votre compte rendu n'a pas été enregistré",
+                MotionToast.TOAST_DELETE,
+                MotionToast.GRAVITY_BOTTOM,
+                MotionToast.LONG_DURATION,
+                ResourcesCompat.getFont(this, R.font.montserrat_regular)
+        );
+
+        startActivity(intent);
+        finish(); //Détruire l'activité
     }
 }

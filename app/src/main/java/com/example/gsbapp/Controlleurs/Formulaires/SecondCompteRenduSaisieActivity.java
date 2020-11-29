@@ -1,6 +1,8 @@
 package com.example.gsbapp.Controlleurs.Formulaires;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.motion.widget.MotionLayout;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +15,8 @@ import android.widget.Toast;
 import com.example.gsbapp.Controlleurs.Animations.OutroActivity;
 import com.example.gsbapp.Controlleurs.Listes.ChoixCompteActivity;
 import com.example.gsbapp.R;
+
+import www.sanju.motiontoast.MotionToast;
 
 public class SecondCompteRenduSaisieActivity extends AppCompatActivity {
 
@@ -45,22 +49,40 @@ public class SecondCompteRenduSaisieActivity extends AppCompatActivity {
     }
 
     public void annulerSaisie(View view) {
-        Toast.makeText(getApplicationContext(),
-                "Le compte rendu n'a pas été enregistré",
-                Toast.LENGTH_LONG)
-                .show();
 
-        startActivity(new Intent(getApplicationContext(), ChoixCompteActivity.class));
+        Intent intent = new Intent(this, ChoixCompteActivity.class);
+
+        MotionToast.Companion.darkToast(
+                SecondCompteRenduSaisieActivity.this,
+                "SAISIE ANNULE",
+                "Votre compte rendu n'a pas été enregistré",
+                MotionToast.TOAST_DELETE,
+                MotionToast.GRAVITY_BOTTOM,
+                MotionToast.LONG_DURATION,
+                ResourcesCompat.getFont(this, R.font.montserrat_regular)
+        );
+
+        startActivity(intent);
+        finish(); //Détruire l'activité
     }
 
     public void confirmationSaisie(View view) {
         Intent intent = new Intent(getApplicationContext(), OutroActivity.class);
-        Toast.makeText(getApplicationContext(),
-                "Le compte rendu a bien été enregisré",
-                Toast.LENGTH_LONG)
-                .show();
+
+        //Création du Motion Toast
+
+        MotionToast.Companion.createToast(
+                SecondCompteRenduSaisieActivity.this,
+                "Succès",
+                "Compte rendu bien enregistré",
+                MotionToast.TOAST_SUCCESS,
+                MotionToast.GRAVITY_BOTTOM,
+                MotionToast.LONG_DURATION,
+                ResourcesCompat.getFont(this, R.font.helvetica_regular)
+        );
+
         startActivity(intent);
-        finish();
+        finish(); //Détruire l'activité
 
     }
 }
