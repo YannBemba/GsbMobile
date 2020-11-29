@@ -50,7 +50,7 @@ public class CompteRenduSaisieActivity extends AppCompatActivity {
 
         //Création du Motion Toast
 
-        MotionToast.Companion.darkToast(
+        MotionToast.Companion.createToast(
                 CompteRenduSaisieActivity.this,
                 "SAISIE ANNULE",
                 "Votre compte rendu n'a pas été enregistré",

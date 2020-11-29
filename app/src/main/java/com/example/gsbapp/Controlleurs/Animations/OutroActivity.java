@@ -31,7 +31,7 @@ public class OutroActivity extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(getApplicationContext(), ChoixCompteActivity.class);
                 startActivity(intent);
-                finish(); // Pour détruire l'activité en cas d'un call back
+                finish();// Pour détruire l'activité en cas d'un call back
             }
         }, TIME);
 

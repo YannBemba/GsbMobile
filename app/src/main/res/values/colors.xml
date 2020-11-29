@@ -9,4 +9,5 @@
     <color name="dark_theme">#121212</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey_white">#dcdedf</color>
+    <color name="pinky">#FCE4EC</color>
 </resources>

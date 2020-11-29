@@ -67,6 +67,7 @@ public class SecondCompteRenduSaisieActivity extends AppCompatActivity {
     }
 
     public void confirmationSaisie(View view) {
+
         Intent intent = new Intent(getApplicationContext(), OutroActivity.class);
 
         //Création du Motion Toast
