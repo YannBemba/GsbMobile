@@ -18,7 +18,6 @@
         android:backgroundTint="#000000"
         android:textColor="#FFFFFF"/>
 
-
     <Button
         android:id="@+id/idSaisir"
         android:layout_marginTop="50dp"
@@ -29,7 +28,5 @@
         android:onClick="choixSaisie"
         android:backgroundTint="#000000"
         android:textColor="#ffffff"/>
-
-
 
 </LinearLayout>

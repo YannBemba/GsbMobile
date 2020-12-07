@@ -7,7 +7,6 @@ public class Visiteur implements Parcelable {
 
     private static Visiteur visiteur = null;
 
-
     private int matricule;
     private String nom;
     private String prenom;
