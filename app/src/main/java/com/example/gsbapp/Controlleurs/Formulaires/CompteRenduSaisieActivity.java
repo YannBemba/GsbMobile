@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.DatePicker;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.gsbapp.Controlleurs.Listes.ChoixCompteActivity;
@@ -20,6 +22,8 @@ import www.sanju.motiontoast.MotionToast;
 public class CompteRenduSaisieActivity extends AppCompatActivity {
 
     Spinner spinListPraticiens;
+    DatePicker mDatePicker;
+    //TextView ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,7 @@ public class CompteRenduSaisieActivity extends AppCompatActivity {
         setContentView(R.layout.activity_compte_rendu_saisie);
 
         spinListPraticiens = (Spinner) findViewById(R.id.spinListPraticiens);
+        mDatePicker = (DatePicker) findViewById(R.id.date_picker);
 
         String[] listePraticiens = new String[]{"Yann Bemba", "Childish Gambino", "Montell Fish"};
 
@@ -35,12 +40,35 @@ public class CompteRenduSaisieActivity extends AppCompatActivity {
                 android.R.layout.simple_spinner_dropdown_item,
                 listePraticiens);
 
+        int mois = mDatePicker.getMonth();
+        int annee = mDatePicker.getYear();
+
+        System.out.println("moisCreate : " + mois);
+        System.out.println("annéeCreate : " + annee);
+
         spinListPraticiens.setAdapter(adapter);
 
     }
 
     public void prochaineSaisieCompteRendu(View view) {
-        startActivity(new Intent(getApplicationContext(), SecondCompteRenduSaisieActivity.class));
+
+        Intent intent = new Intent(this, SecondCompteRenduSaisieActivity.class);
+
+        int jour, mois, annee, today;
+
+        jour = mDatePicker.getDayOfMonth();
+        mois = mDatePicker.getMonth() + 1;
+        annee = mDatePicker.getYear();
+        today = mDatePicker.getAutofillType();
+
+        System.out.println("jour : " + jour);
+        System.out.println("mois : " + mois);
+        System.out.println("année : " + annee);
+
+
+
+        startActivity(intent);
+
     }
 
 

@@ -33,12 +33,13 @@
             android:layout_marginBottom="20dp"/>
 
         <TextView
+            android:id="@+id/listePraticiens"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Liste des praticiens :"
             android:textColor="@color/dark_theme"
             android:textSize="18sp"
-            android:textAlignment="textStart"/>
+            android:textAlignment="textStart" />
 
         <Spinner
             android:id="@+id/spinListPraticiens"
@@ -62,6 +63,7 @@
                 android:textSize="18sp" />
 
             <DatePicker
+                android:id="@+id/date_picker"
                 style="@style/MyDatePicker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
